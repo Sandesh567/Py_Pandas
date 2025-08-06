@@ -20,11 +20,11 @@ pip install pandas
 ## 1. Reading CSV file
 df_Csv = pd.read_csv("sales_data_sample.csv" , encoding="latin1")
 
-** read data from CSV file into a data file, also include encoding type **
+**read data from CSV file into a data file, also include encoding type**
 
 ## 2. Reading excel file
 
-** install xlrd package to run excel file**
+**install xlrd package to run excel file**
 
 df_Excel = pd.read_excel("SampleSuperstore.xlsx")
 
