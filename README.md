@@ -32,6 +32,13 @@ df_Excel = pd.read_excel("SampleSuperstore.xlsx")
 
 df_json = pd.read_json("sample_Data.json")
 
+## Saving data as different file format
+
+## info method
+
+## describe method
+## shape and column method
+
 
 
 
