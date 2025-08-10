@@ -47,6 +47,13 @@ df_json = pd.read_json("sample_Data.json")
 
 6. Rows Filtering
 
+7. Updating Data Frame
+
+8. Adding New Column to the Data Frame
+
+9. Removing column from the Data Frame
+
+
 
 
 
