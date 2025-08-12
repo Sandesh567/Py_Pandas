@@ -53,6 +53,28 @@ df_json = pd.read_json("sample_Data.json")
 
 9. Removing column from the Data Frame
 
+10. Detecting missing values using isnull().
+    Returns boolean value true means value missing, false means not missing.
+    isnull().sum() using this return the number of missing values.
+
+11. Handling missing values by deleting it using dropna().
+
+        # df.dropna(axis=0/1, inplace = True)
+        # axis = 0 means delete rows with missing value
+        # axis = 1 means delete column with missing value
+
+                    df.dropna(inplace=True)
+            It simply removes the missing value from the data frame.
+
+12. Handling missing values by filling it rather than deleting it using fillna().
+
+    #  We can fill it using default value : df.fillna(0, inplace=True), passing default value 0.
+
+    #  We can use mean to fill the missing value.It is more like a calculated value approach
+            df['Age'].fillna(df['Age'].mean(),inplace=True)
+
+
+
 
 
 
