@@ -73,6 +73,12 @@ df_json = pd.read_json("sample_Data.json")
     #  We can use mean to fill the missing value.It is more like a calculated value approach
             df['Age'].fillna(df['Age'].mean(),inplace=True)
 
+13. Handling missing values using interpolate linear method.
+
+        df['Value'].interpolate(method = "linear")  #Value is column name
+
+            Three major methods: linear, time , polynomial
+
 
 
 
