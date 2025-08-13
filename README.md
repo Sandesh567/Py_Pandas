@@ -75,9 +75,10 @@ df_json = pd.read_json("sample_Data.json")
 
 13. Handling missing values using interpolate linear method.
 
-        df['Value'].interpolate(method = "linear")  #Value is column name
+        df['Value'].interpolate(method = "linear")
 
-            Three major methods: linear, time , polynomial
+                     #Value is column name
+                     #Three major methods: linear, time , polynomial
 
 
 
