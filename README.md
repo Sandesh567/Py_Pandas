@@ -80,7 +80,22 @@ df_json = pd.read_json("sample_Data.json")
                      #Value is column name
                      #Three major methods: linear, time , polynomial
 
+14. Sorting Columns using sort_values()
 
+        df.sort_values(by="column_name",TRUE / FALSE, inplace = True)  #single column sorting
+            #true = ascending false= descending
+
+        df.sort_values(by=["Name","Salary"],ascending=[True,False],inplace=True) #multiple column sorting
+            
+15. Grouping the data using groupby()
+            df.groupby("Age")["Salary"].sum()  #single column grouping
+
+        # Here first data is grouped based on age and salary then sum() function is performed.
+        # person with same data is considered single data and added using sum().
+
+            df.groupby(["Age","Name"]) ["Salary"].sum() #multiple column grouping
+
+        # Here name and age is grouped together and salary is single grouped and sum is performed.
 
 
 
