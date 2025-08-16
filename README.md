@@ -98,8 +98,36 @@ df_json = pd.read_json("sample_Data.json")
         # Here name and age is grouped together and salary is single grouped and sum is performed.
 
 
+16. Summary Statistics
+
+    #Provides a numerical statistics of data such as mean, max, min, count, std, sum
+        ave_salary = df['Salary'].mean()
+
+17. Merging
+    #merging the dataframes using merge()
+
+         df_merged_inner = pd.merge(df_customers,df_orders,on="CustomerID",how="inner")
+
+        # df_customers, df_orders = data frames
+        # on means which column to target
+        # how means join type inner, right, left, outer
+
+                        
+18. Concatenation of DataFrames
+        #Combining data sets vertically or horizontally
+
+                #pd.concate([df1,df1] , axis = 0 ,ignore_index=True)
+
+            # [df1,df1] = list of data frames
+            # axis = 0 row / 1 Column
+            # ignore_index = True -  reset index
+
+#Concate vertically axis = 0 (Default)
+df_concat_vertical = pd.concat([df_Region1,df_Region2],ignore_index=True)
 
 
+#Concate horizontally axis = 1
+df_concat_horizontal = pd.concat([df_Region1,df_Region2],axis=1,ignore_index=True)
 
 
 
